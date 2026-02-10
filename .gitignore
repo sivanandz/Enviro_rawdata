@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Data and Logs
+logs/
+era5_data_2025/
+tasks.db
+*.xlsx
+*.csv
+
+# Config (if sensitive, but here it seems just cities)
+# config/
+
+# Virtual Env
+venv/
+env/
+.env

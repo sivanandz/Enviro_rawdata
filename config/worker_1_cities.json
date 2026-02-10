@@ -1,0 +1,548 @@
+[
+    {
+        "city": "Whitehorse",
+        "country": "Canada",
+        "lat": 60.72,
+        "lon": -135.05
+    },
+    {
+        "city": "Atlin",
+        "country": "Canada",
+        "lat": 59.57,
+        "lon": -133.71
+    },
+    {
+        "city": "Calgary (Border)",
+        "country": "Canada",
+        "lat": 51.04,
+        "lon": -114.07
+    },
+    {
+        "city": "Iqaluit",
+        "country": "Canada",
+        "lat": 63.74,
+        "lon": -68.51
+    },
+    {
+        "city": "Alert",
+        "country": "Canada",
+        "lat": 82.5,
+        "lon": -62.33
+    },
+    {
+        "city": "Rome",
+        "country": "Italy",
+        "lat": 41.9,
+        "lon": 12.49
+    },
+    {
+        "city": "Rieti",
+        "country": "Italy",
+        "lat": 42.4,
+        "lon": 12.86
+    },
+    {
+        "city": "Milan",
+        "country": "Italy",
+        "lat": 45.46,
+        "lon": 9.18
+    },
+    {
+        "city": "Bologna",
+        "country": "Italy",
+        "lat": 44.49,
+        "lon": 11.34
+    },
+    {
+        "city": "Lampedusa",
+        "country": "Italy",
+        "lat": 35.51,
+        "lon": 12.58
+    },
+    {
+        "city": "Ishigaki",
+        "country": "Japan",
+        "lat": 24.34,
+        "lon": 124.15
+    },
+    {
+        "city": "Chichijima",
+        "country": "Japan",
+        "lat": 27.09,
+        "lon": 142.19
+    },
+    {
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.68,
+        "lon": 139.69
+    },
+    {
+        "city": "Sapporo",
+        "country": "Japan",
+        "lat": 43.06,
+        "lon": 141.35
+    },
+    {
+        "city": "Kushiro",
+        "country": "Japan",
+        "lat": 42.98,
+        "lon": 144.38
+    },
+    {
+        "city": "Paris",
+        "country": "France",
+        "lat": 48.85,
+        "lon": 2.35
+    },
+    {
+        "city": "Toulouse",
+        "country": "France",
+        "lat": 43.6,
+        "lon": 1.44
+    },
+    {
+        "city": "Nice",
+        "country": "France",
+        "lat": 43.71,
+        "lon": 7.26
+    },
+    {
+        "city": "Brian\u00e7on",
+        "country": "France",
+        "lat": 44.89,
+        "lon": 6.64
+    },
+    {
+        "city": "Tignes",
+        "country": "France",
+        "lat": 45.46,
+        "lon": 6.9
+    },
+    {
+        "city": "Cayenne (FR Guiana)",
+        "country": "France",
+        "lat": 4.93,
+        "lon": -52.33
+    },
+    {
+        "city": "Villahermosa",
+        "country": "Mexico",
+        "lat": 17.98,
+        "lon": -92.93
+    },
+    {
+        "city": "Canc\u00fan",
+        "country": "Mexico",
+        "lat": 21.16,
+        "lon": -86.85
+    },
+    {
+        "city": "Hermosillo",
+        "country": "Mexico",
+        "lat": 29.07,
+        "lon": -110.97
+    },
+    {
+        "city": "Ciudad Ju\u00e1rez",
+        "country": "Mexico",
+        "lat": 31.69,
+        "lon": -106.42
+    },
+    {
+        "city": "Monterrey",
+        "country": "Mexico",
+        "lat": 25.68,
+        "lon": -100.31
+    },
+    {
+        "city": "Pachuca",
+        "country": "Mexico",
+        "lat": 20.1,
+        "lon": -98.75
+    },
+    {
+        "city": "Cuernavaca",
+        "country": "Mexico",
+        "lat": 18.92,
+        "lon": -99.23
+    },
+    {
+        "city": "Mexico City",
+        "country": "Mexico",
+        "lat": 19.43,
+        "lon": -99.13
+    },
+    {
+        "city": "Tecate",
+        "country": "Mexico",
+        "lat": 32.56,
+        "lon": -116.62
+    },
+    {
+        "city": "Matamoros",
+        "country": "Mexico",
+        "lat": 25.86,
+        "lon": -97.5
+    },
+    {
+        "city": "\u015eanl\u0131urfa",
+        "country": "Turkey",
+        "lat": 37.16,
+        "lon": 38.79
+    },
+    {
+        "city": "Sivas",
+        "country": "Turkey",
+        "lat": 39.75,
+        "lon": 37.01
+    },
+    {
+        "city": "Istanbul",
+        "country": "Turkey",
+        "lat": 41.0,
+        "lon": 28.97
+    },
+    {
+        "city": "Ankara",
+        "country": "Turkey",
+        "lat": 39.93,
+        "lon": 32.85
+    },
+    {
+        "city": "Erzurum",
+        "country": "Turkey",
+        "lat": 39.9,
+        "lon": 41.27
+    },
+    {
+        "city": "Port Harcourt",
+        "country": "Nigeria",
+        "lat": 4.81,
+        "lon": 7.04
+    },
+    {
+        "city": "Lagos",
+        "country": "Nigeria",
+        "lat": 6.52,
+        "lon": 3.37
+    },
+    {
+        "city": "Kano",
+        "country": "Nigeria",
+        "lat": 12.0,
+        "lon": 8.59
+    },
+    {
+        "city": "Almer\u00eda",
+        "country": "Spain",
+        "lat": 36.83,
+        "lon": -2.46
+    },
+    {
+        "city": "Lorca",
+        "country": "Spain",
+        "lat": 37.67,
+        "lon": -1.7
+    },
+    {
+        "city": "Alicante",
+        "country": "Spain",
+        "lat": 38.34,
+        "lon": -0.48
+    },
+    {
+        "city": "Madrid",
+        "country": "Spain",
+        "lat": 40.41,
+        "lon": -3.7
+    },
+    {
+        "city": "Seville",
+        "country": "Spain",
+        "lat": 37.38,
+        "lon": -5.98
+    },
+    {
+        "city": "Porto (Analog)",
+        "country": "Spain",
+        "lat": 41.15,
+        "lon": -8.62
+    },
+    {
+        "city": "Girona",
+        "country": "Spain",
+        "lat": 41.97,
+        "lon": 2.82
+    },
+    {
+        "city": "Bilbao",
+        "country": "Spain",
+        "lat": 43.26,
+        "lon": -2.93
+    },
+    {
+        "city": "Medan",
+        "country": "Indonesia",
+        "lat": 3.59,
+        "lon": 98.67
+    },
+    {
+        "city": "Jakarta",
+        "country": "Indonesia",
+        "lat": -6.17,
+        "lon": 106.82
+    },
+    {
+        "city": "Denpasar",
+        "country": "Indonesia",
+        "lat": -8.67,
+        "lon": 115.21
+    },
+    {
+        "city": "Da Nang",
+        "country": "Vietnam",
+        "lat": 16.05,
+        "lon": 108.2
+    },
+    {
+        "city": "Ho Chi Minh City",
+        "country": "Vietnam",
+        "lat": 10.82,
+        "lon": 106.63
+    },
+    {
+        "city": "Hanoi",
+        "country": "Vietnam",
+        "lat": 21.02,
+        "lon": 105.83
+    },
+    {
+        "city": "Kyiv",
+        "country": "Ukraine",
+        "lat": 50.45,
+        "lon": 30.52
+    },
+    {
+        "city": "Sevastopol",
+        "country": "Ukraine",
+        "lat": 44.61,
+        "lon": 33.52
+    },
+    {
+        "city": "Bernardo de Irigoyen",
+        "country": "Argentina",
+        "lat": -26.25,
+        "lon": -53.64
+    },
+    {
+        "city": "Chilecito",
+        "country": "Argentina",
+        "lat": -29.16,
+        "lon": -67.49
+    },
+    {
+        "city": "Mendoza",
+        "country": "Argentina",
+        "lat": -32.88,
+        "lon": -68.84
+    },
+    {
+        "city": "La Rioja",
+        "country": "Argentina",
+        "lat": -29.41,
+        "lon": -66.85
+    },
+    {
+        "city": "Viedma",
+        "country": "Argentina",
+        "lat": -40.81,
+        "lon": -62.99
+    },
+    {
+        "city": "Mar del Plata (Border)",
+        "country": "Argentina",
+        "lat": -38.0,
+        "lon": -57.55
+    },
+    {
+        "city": "Bariloche",
+        "country": "Argentina",
+        "lat": -41.13,
+        "lon": -71.3
+    },
+    {
+        "city": "Buenos Aires",
+        "country": "Argentina",
+        "lat": -34.6,
+        "lon": -58.38
+    },
+    {
+        "city": "Mar del Plata",
+        "country": "Argentina",
+        "lat": -38.0,
+        "lon": -57.55
+    },
+    {
+        "city": "Rio Grande",
+        "country": "Argentina",
+        "lat": -53.78,
+        "lon": -67.7
+    },
+    {
+        "city": "C\u00f3rdoba",
+        "country": "Argentina",
+        "lat": -31.41,
+        "lon": -64.18
+    },
+    {
+        "city": "El Aguilar",
+        "country": "Argentina",
+        "lat": -23.22,
+        "lon": -65.69
+    },
+    {
+        "city": "Davao",
+        "country": "Philippines",
+        "lat": 7.19,
+        "lon": 125.45
+    },
+    {
+        "city": "Manila",
+        "country": "Philippines",
+        "lat": 14.59,
+        "lon": 120.98
+    },
+    {
+        "city": "Cebu City",
+        "country": "Philippines",
+        "lat": 10.31,
+        "lon": 123.89
+    },
+    {
+        "city": "Garissa",
+        "country": "Kenya",
+        "lat": -0.45,
+        "lon": 39.64
+    },
+    {
+        "city": "Lodwar",
+        "country": "Kenya",
+        "lat": 3.11,
+        "lon": 35.59
+    },
+    {
+        "city": "Mombasa",
+        "country": "Kenya",
+        "lat": -4.03,
+        "lon": 39.66
+    },
+    {
+        "city": "Kisumu",
+        "country": "Kenya",
+        "lat": -0.09,
+        "lon": 34.76
+    },
+    {
+        "city": "Nakuru",
+        "country": "Kenya",
+        "lat": -0.3,
+        "lon": 36.06
+    },
+    {
+        "city": "Nairobi",
+        "country": "Kenya",
+        "lat": -1.28,
+        "lon": 36.82
+    },
+    {
+        "city": "Nakhon Si Thammarat",
+        "country": "Thailand",
+        "lat": 8.43,
+        "lon": 99.96
+    },
+    {
+        "city": "Hat Yai",
+        "country": "Thailand",
+        "lat": 7.0,
+        "lon": 100.47
+    },
+    {
+        "city": "Bangkok",
+        "country": "Thailand",
+        "lat": 13.75,
+        "lon": 100.5
+    },
+    {
+        "city": "Auckland",
+        "country": "New_Zealand",
+        "lat": -36.84,
+        "lon": 174.76
+    },
+    {
+        "city": "Alexandra",
+        "country": "New_Zealand",
+        "lat": -45.24,
+        "lon": 169.39
+    },
+    {
+        "city": "Alofi (Admin)",
+        "country": "New_Zealand",
+        "lat": -19.05,
+        "lon": -169.92
+    },
+    {
+        "city": "Buenaventura",
+        "country": "Colombia",
+        "lat": 3.88,
+        "lon": -77.03
+    },
+    {
+        "city": "Cali",
+        "country": "Colombia",
+        "lat": 3.45,
+        "lon": -76.53
+    },
+    {
+        "city": "Cartagena",
+        "country": "Colombia",
+        "lat": 10.39,
+        "lon": -75.47
+    },
+    {
+        "city": "Bogot\u00e1",
+        "country": "Colombia",
+        "lat": 4.71,
+        "lon": -74.07
+    },
+    {
+        "city": "Pasto",
+        "country": "Colombia",
+        "lat": 1.21,
+        "lon": -77.28
+    },
+    {
+        "city": "Iquitos",
+        "country": "Peru",
+        "lat": -3.74,
+        "lon": -73.25
+    },
+    {
+        "city": "Pucallpa",
+        "country": "Peru",
+        "lat": -8.38,
+        "lon": -74.55
+    },
+    {
+        "city": "Lima",
+        "country": "Peru",
+        "lat": -12.04,
+        "lon": -77.04
+    },
+    {
+        "city": "Arequipa",
+        "country": "Peru",
+        "lat": -16.4,
+        "lon": -71.53
+    }
+]

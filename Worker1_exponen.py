@@ -1,0 +1,518 @@
+import cdsapi
+import os
+import time
+import random
+import json
+import xarray as xr
+
+# ==========================================
+# CONFIGURATION
+# ==========================================
+WORKER_ID = 1  # <--- CHANGE THIS for each worker (1, 2, 3, or 4)
+
+# PASTE THE SPECIFIC WORKER'S CITIES LIST HERE
+
+CITIES = [
+    {
+        "city": "Hilo",
+        "country": "United_States",
+        "lat": 19.72,
+        "lon": -155.08
+    },
+    {
+        "city": "Miami",
+        "country": "United_States",
+        "lat": 25.76,
+        "lon": -80.19
+    },
+    {
+        "city": "Key West",
+        "country": "United_States",
+        "lat": 24.55,
+        "lon": -81.78
+    },
+    {
+        "city": "Phoenix",
+        "country": "United_States",
+        "lat": 33.44,
+        "lon": -112.07
+    },
+    {
+        "city": "Albuquerque",
+        "country": "United_States",
+        "lat": 35.08,
+        "lon": -106.65
+    },
+    {
+        "city": "Honolulu",
+        "country": "United_States",
+        "lat": 21.3,
+        "lon": -157.85
+    },
+    {
+        "city": "Denver",
+        "country": "United_States",
+        "lat": 39.73,
+        "lon": -104.99
+    },
+    {
+        "city": "Sacramento",
+        "country": "United_States",
+        "lat": 38.58,
+        "lon": -121.49
+    },
+    {
+        "city": "San Francisco",
+        "country": "United_States",
+        "lat": 37.77,
+        "lon": -122.41
+    },
+    {
+        "city": "Washington",
+        "country": "United_States",
+        "lat": 38.9,
+        "lon": -77.03
+    },
+    {
+        "city": "Ketchikan",
+        "country": "United_States",
+        "lat": 55.34,
+        "lon": -131.64
+    },
+    {
+        "city": "Adak",
+        "country": "United_States",
+        "lat": 51.88,
+        "lon": -176.65
+    },
+    {
+        "city": "Chicago",
+        "country": "United_States",
+        "lat": 41.87,
+        "lon": -87.62
+    },
+    {
+        "city": "Minneapolis",
+        "country": "United_States",
+        "lat": 44.97,
+        "lon": -93.26
+    },
+    {
+        "city": "Nome",
+        "country": "United_States",
+        "lat": 64.5,
+        "lon": -165.4
+    },
+    {
+        "city": "Anchorage",
+        "country": "United_States",
+        "lat": 61.21,
+        "lon": -149.9
+    },
+    {
+        "city": "Bodie",
+        "country": "United_States",
+        "lat": 38.21,
+        "lon": -119.01
+    },
+    {
+        "city": "Utqiagvik",
+        "country": "United_States",
+        "lat": 71.29,
+        "lon": -156.78
+    },
+    {
+        "city": "McMurdo Station",
+        "country": "United_States",
+        "lat": -77.84,
+        "lon": 166.66
+    },
+    {
+        "city": "Kochi",
+        "country": "India",
+        "lat": 9.93,
+        "lon": 76.26
+    },
+    {
+        "city": "Mumbai",
+        "country": "India",
+        "lat": 19.07,
+        "lon": 72.87
+    },
+    {
+        "city": "Jodhpur",
+        "country": "India",
+        "lat": 26.23,
+        "lon": 73.02
+    },
+    {
+        "city": "Leh",
+        "country": "India",
+        "lat": 34.15,
+        "lon": 77.57
+    },
+    {
+        "city": "Delhi",
+        "country": "India",
+        "lat": 28.61,
+        "lon": 77.23
+    },
+    {
+        "city": "Guwahati",
+        "country": "India",
+        "lat": 26.14,
+        "lon": 91.73
+    },
+    {
+        "city": "Srinagar",
+        "country": "India",
+        "lat": 34.08,
+        "lon": 74.79
+    },
+    {
+        "city": "Kodaikanal",
+        "country": "India",
+        "lat": 10.23,
+        "lon": 77.48
+    },
+    {
+        "city": "Innisfail",
+        "country": "Australia",
+        "lat": -17.52,
+        "lon": 146.03
+    },
+    {
+        "city": "Cairns",
+        "country": "Australia",
+        "lat": -16.91,
+        "lon": 145.77
+    },
+    {
+        "city": "Darwin",
+        "country": "Australia",
+        "lat": -12.46,
+        "lon": 130.84
+    },
+    {
+        "city": "Alice Springs",
+        "country": "Australia",
+        "lat": -23.69,
+        "lon": 133.88
+    },
+    {
+        "city": "Mount Isa",
+        "country": "Australia",
+        "lat": -20.72,
+        "lon": 139.49
+    },
+    {
+        "city": "Mildura",
+        "country": "Australia",
+        "lat": -34.2,
+        "lon": 142.12
+    },
+    {
+        "city": "Adelaide",
+        "country": "Australia",
+        "lat": -34.92,
+        "lon": 138.6
+    },
+    {
+        "city": "Mount Gambier",
+        "country": "Australia",
+        "lat": -37.82,
+        "lon": 140.78
+    },
+    {
+        "city": "Mackay",
+        "country": "Australia",
+        "lat": -21.14,
+        "lon": 149.18
+    },
+    {
+        "city": "Brisbane",
+        "country": "Australia",
+        "lat": -27.47,
+        "lon": 153.02
+    },
+    {
+        "city": "Melbourne",
+        "country": "Australia",
+        "lat": -37.81,
+        "lon": 144.96
+    },
+    {
+        "city": "Miena",
+        "country": "Australia",
+        "lat": -41.98,
+        "lon": 146.68
+    },
+    {
+        "city": "Manaus",
+        "country": "Brazil",
+        "lat": -3.11,
+        "lon": -60.02
+    },
+    {
+        "city": "Recife",
+        "country": "Brazil",
+        "lat": -8.05,
+        "lon": -34.88
+    },
+    {
+        "city": "Brasília",
+        "country": "Brazil",
+        "lat": -15.79,
+        "lon": -47.88
+    },
+    {
+        "city": "Fortaleza",
+        "country": "Brazil",
+        "lat": -3.73,
+        "lon": -38.52
+    },
+    {
+        "city": "Petrolina",
+        "country": "Brazil",
+        "lat": -9.38,
+        "lon": -40.5
+    },
+    {
+        "city": "São Paulo",
+        "country": "Brazil",
+        "lat": -23.55,
+        "lon": -46.63
+    },
+    {
+        "city": "Curitiba",
+        "country": "Brazil",
+        "lat": -25.42,
+        "lon": -49.27
+    },
+    {
+        "city": "Belo Horizonte",
+        "country": "Brazil",
+        "lat": -19.91,
+        "lon": -43.93
+    },
+    {
+        "city": "Diamantina",
+        "country": "Brazil",
+        "lat": -18.24,
+        "lon": -43.6
+    },
+    {
+        "city": "Upington",
+        "country": "South_Africa",
+        "lat": -28.45,
+        "lon": 21.24
+    },
+    {
+        "city": "Kimberley",
+        "country": "South_Africa",
+        "lat": -28.72,
+        "lon": 24.74
+    },
+    {
+        "city": "Bloemfontein",
+        "country": "South_Africa",
+        "lat": -29.11,
+        "lon": 26.21
+    },
+    {
+        "city": "Cape Town",
+        "country": "South_Africa",
+        "lat": -33.92,
+        "lon": 18.42
+    },
+    {
+        "city": "Port Lincoln (Analog)",
+        "country": "South_Africa",
+        "lat": -34.72,
+        "lon": 135.86
+    },
+    {
+        "city": "Durban",
+        "country": "South_Africa",
+        "lat": -29.85,
+        "lon": 31.02
+    },
+    {
+        "city": "Port Elizabeth",
+        "country": "South_Africa",
+        "lat": -33.96,
+        "lon": 25.6
+    },
+    {
+        "city": "Johannesburg",
+        "country": "South_Africa",
+        "lat": -26.2,
+        "lon": 28.04
+    },
+    {
+        "city": "Prince Rupert",
+        "country": "Canada",
+        "lat": 54.31,
+        "lon": -130.32
+    },
+    {
+        "city": "Victoria",
+        "country": "Canada",
+        "lat": 48.42,
+        "lon": -123.36
+    },
+    {
+        "city": "Medicine Hat",
+        "country": "Canada",
+        "lat": 50.03,
+        "lon": -110.67
+    },
+    {
+        "city": "Windsor",
+        "country": "Canada",
+        "lat": 42.31,
+        "lon": -83.03
+    },
+    {
+        "city": "Toronto",
+        "country": "Canada",
+        "lat": 43.65,
+        "lon": -79.38
+    }
+]
+
+
+DATA_DIR = "era5_data_2025"
+YEARS = [2025]
+MONTHS = list(range(1, 13))
+
+# Ensure data directory exists
+os.makedirs(DATA_DIR, exist_ok=True)
+
+def get_city_progress(city, country, data_dir):
+    """Check how many files exist for a city and return missing files"""
+    existing_files = 0
+    missing_files = []
+
+    for year in YEARS:
+        for month in MONTHS:
+            filename = f"{city}_{country}_{year}_{month:02d}.nc"
+            filepath = os.path.join(data_dir, filename)
+
+            if os.path.exists(filepath):
+                existing_files += 1
+            else:
+                missing_files.append((year, month))
+
+    return existing_files, missing_files
+
+def is_city_complete(city, country, data_dir):
+    """Check if all files exist for a city"""
+    existing, missing = get_city_progress(city, country, data_dir)
+    total_expected = len(YEARS) * len(MONTHS)
+    return existing == total_expected
+
+def download_era5_data(city, country, lat, lon, year, month):
+    """Download ERA5 data with Exponential Backoff"""
+    c = cdsapi.Client()
+    
+    # We download as .nc (NetCDF) because CDS doesn't support direct JSON export
+    nc_filename = f"{city}_{country}_{year}_{month:02d}.nc"
+    json_filename = f"{city}_{country}_{year}_{month:02d}.json"
+    nc_filepath = os.path.join(DATA_DIR, nc_filename)
+    json_filepath = os.path.join(DATA_DIR, json_filename)
+
+    if os.path.exists(json_filepath):
+        print(f"[Worker {WORKER_ID}] JSON already exists: {json_filename}")
+        return True
+
+    # --- EXPONENTIAL BACKOFF LOGIC ---
+    max_retries = 5
+    base_delay = 5  # Start with 5 seconds for CDS
+    
+    for attempt in range(max_retries):
+        try:
+            print(f"[Worker {WORKER_ID}] Attempt {attempt+1}: Downloading {nc_filename}...")
+            c.retrieve(
+                'reanalysis-era5-single-levels',
+                {
+                    'product_type': 'reanalysis',
+                    'variable': [
+                        '2m_temperature', 'total_precipitation', 'total_cloud_cover',
+                        '10m_u_component_of_wind', '10m_v_component_of_wind'
+                    ],
+                    'year': str(year),
+                    'month': f'{month:02d}',
+                    'day': [f'{d:02d}' for d in range(1, 32)],
+                    'time': [f'{h:02d}:00' for h in range(24)],
+                    'area': [lat, lon, lat, lon],
+                    'format': 'netcdf',
+                },
+                nc_filepath
+            )
+            
+            # --- CONVERT TO JSON ---
+            print(f"Converting {nc_filename} to JSON...")
+            ds = xr.open_dataset(nc_filepath)
+            df = ds.to_dataframe()
+            df.to_json(json_filepath, orient="table") # Orient 'table' is best for time-series
+            
+            # Clean up the large .nc file to save space
+            ds.close()
+            os.remove(nc_filepath)
+
+            return True
+
+        except Exception as e:
+            delay = (base_delay * 2 ** attempt) + random.uniform(0, 3)
+            print(f"Error: {e}. Retrying in {delay:.1f}s...")
+            time.sleep(delay)
+
+    return False
+
+def process_city(city_data):
+    """Process all months for a city"""
+    city = city_data["city"]
+    country = city_data["country"]
+    lat = city_data["lat"]
+    lon = city_data["lon"]
+    
+    # Check if city is already complete
+    if is_city_complete(city, country, DATA_DIR):
+        print(f"[Worker {WORKER_ID}] {city}, {country} already complete. Skipping.")
+        return True
+    
+    # Get progress
+    existing, missing = get_city_progress(city, country, DATA_DIR)
+    print(f"[Worker {WORKER_ID}] Starting city: {city}, {country}")
+    print(f"[Worker {WORKER_ID}] Progress: {existing} files exist, {len(missing)} files to download")
+
+    success_count = existing
+    
+    # Download only missing files
+    for year, month in missing:
+        if download_era5_data(city, country, lat, lon, year, month):
+            success_count += 1
+        time.sleep(2)  # Rate limiting
+
+    total_expected = len(YEARS) * len(MONTHS)
+    print(f"[Worker {WORKER_ID}] Completed {city}: {success_count}/{total_expected} files")
+    return success_count == total_expected
+
+def main():
+    """Main processing loop"""
+    print(f"=== Worker {WORKER_ID} Started ===")
+    print(f"Processing {len(CITIES)} cities")
+    print(f"Target Year: 2025")
+
+    completed_cities = 0
+
+    for city_data in CITIES:
+        if process_city(city_data):
+            completed_cities += 1
+
+    print(f"=== Worker {WORKER_ID} Finished ===")
+    print(f"Successfully completed: {completed_cities}/{len(CITIES)} cities")
+
+if __name__ == "__main__":
+    main()
