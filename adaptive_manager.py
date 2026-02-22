@@ -14,7 +14,7 @@ SCALE_UP_INTERVAL = 300 # Try scaling up every 5 minutes of stability
 script_name = "adaptive_worker.py"
 DB_FILE = "tasks.db"
 
-def get_pending_count():
+def get_pending_count(): 
     try:
         conn = sqlite3.connect(DB_FILE)
         c = conn.cursor()
