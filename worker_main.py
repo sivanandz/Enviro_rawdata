@@ -99,8 +99,8 @@ def download_era5_data(worker_id, logger, city, country, lat, lon, year, month):
                     'month': f'{month:02d}',
                     'day': [f'{d:02d}' for d in range(1, 32)],
                     'time': [f'{h:02d}:00' for h in range(24)],
-                    'area': [lat, lon, lat, lon],
-                    'format': 'netcdf',
+                    'area': [lat + 0.25, lon - 0.25, lat - 0.25, lon + 0.25], # North, West, South, East
+                    'data_format': 'netcdf',
                 },
                 nc_filepath
             )
@@ -159,12 +159,16 @@ def download_era5_data(worker_id, logger, city, country, lat, lon, year, month):
 
         except Exception as e:
             error_str = str(e).lower()
-            if "rejected" in error_str or "queued requests" in error_str or "limited" in error_str or "400" in error_str:
+            if "rejected" in error_str or "queued requests" in error_str or "limited" in error_str or "429" in error_str:
                 # Specific handling for API rate limits / queue full
                 delay = 60 + random.uniform(0, 30)
-                logger.warning(f"API Limit/Rejection detected: {e}. Sleeping long ({delay:.1f}s)...")
+                logger.warning(f"API Limit/Rejection (429) detected: {e}. Sleeping long ({delay:.1f}s)...")
                 time.sleep(delay)
                 continue # Retry loop
+            
+            if "400" in error_str or "assertion failed" in error_str:
+                logger.error(f"CRITICAL API ERROR: {e}. Stopping retries for this task.")
+                return False
 
             delay = (base_delay * 2 ** attempt) + random.uniform(0, 5)
             # Cap delay at some reasonable max (e.g. 5 mins)

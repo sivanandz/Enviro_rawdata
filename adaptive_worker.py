@@ -152,8 +152,8 @@ def download_era5_data(logger, city, country, lat, lon, year, month):
                 'month': f'{month:02d}',
                 'day': [f'{d:02d}' for d in range(1, 32)],
                 'time': [f'{h:02d}:00' for h in range(24)],
-                'area': [lat, lon, lat, lon],
-                'format': 'netcdf',
+                'area': [lat + 0.25, lon - 0.25, lat - 0.25, lon + 0.25], # North, West, South, East (Bounding box to ensure grid point inclusion)
+                'data_format': 'netcdf',
             },
             nc_filepath
         )
@@ -220,9 +220,17 @@ def download_era5_data(logger, city, country, lat, lon, year, month):
 
     except Exception as e:
         error_str = str(e).lower()
-        if "rejected" in error_str or "queued requests" in error_str or "limited" in error_str or "400" in error_str:
-            logger.warning(f"JOB REJECTED: {e}")
+        if "rejected" in error_str or "queued requests" in error_str or "limited" in error_str or "429" in error_str:
+            logger.warning(f"JOB REJECTED (Rate Limit): {e}")
             return "rejected" # SIGNAL TO EXIT
+        
+        if "assertion failed" in error_str and "area" in error_str:
+             logger.error(f"CRITICAL CONFIG ERROR (Area): {e}")
+             return f"error: area_assertion_failed"
+
+        if "400" in error_str:
+            logger.error(f"BAD REQUEST (400): {e}. Selection might be invalid.")
+            return f"error: bad_request_400"
         
         # Check for bad file format
         if "unknown file format" in error_str or "errno -51" in error_str:
