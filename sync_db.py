@@ -3,8 +3,7 @@ import json
 import os
 import glob
 
-DB_FILE = "tasks.db"
-CONFIG_DIR = "config"
+from db_config import DB_FILE, CONFIG_DIR
 
 
 def sync_db(target_year):

@@ -3,8 +3,10 @@ import glob
 import os
 import sqlite3
 
+from db_config import DB_FILE, CONFIG_DIR
+
 def count_cities():
-    config_files = glob.glob('config/worker_*.json')
+    config_files = glob.glob(os.path.join(CONFIG_DIR, 'worker_*.json'))
     json_city_names = set()
     total_json_cities = 0
     
@@ -20,8 +22,8 @@ def count_cities():
     
     db_city_names = set()
     total_db_cities = 0
-    if os.path.exists('tasks.db'):
-        conn = sqlite3.connect('tasks.db')
+    if os.path.exists(DB_FILE):
+        conn = sqlite3.connect(DB_FILE)
         c = conn.cursor()
         c.execute('SELECT city, country FROM cities')
         rows = c.fetchall()

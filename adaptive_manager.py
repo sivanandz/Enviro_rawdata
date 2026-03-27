@@ -4,6 +4,9 @@ import time
 import os
 import sqlite3
 
+from timer_utils import GlobalTimer
+from db_config import DB_FILE
+
 # ==========================================
 # CONFIGURATION
 # ==========================================
@@ -12,7 +15,6 @@ INITIAL_WORKERS = 2
 COOLDOWN_SECONDS = 300 # 5 minutes cooldown after rejection
 SCALE_UP_INTERVAL = 300 # Try scaling up every 5 minutes of stability
 script_name = "adaptive_worker.py"
-DB_FILE = "tasks.db"
 
 def get_pending_count(): 
     try:
@@ -26,6 +28,7 @@ def get_pending_count():
         return 0
 
 def main():
+    timer = GlobalTimer()
     target_workers = INITIAL_WORKERS
     processes = {} # pid -> Popen object
     

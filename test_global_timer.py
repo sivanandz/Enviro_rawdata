@@ -3,13 +3,14 @@ import subprocess
 import sys
 import sqlite3
 from timer_utils import GlobalTimer
+from db_config import DB_FILE
 
 # Use accelerated timing: 30s work, 10s rest for testing
 WORK_TIME = 30
 REST_TIME = 10
 
 def reset_db():
-    conn = sqlite3.connect("tasks.db")
+    conn = sqlite3.connect(DB_FILE)
     c = conn.cursor()
     c.execute("UPDATE system_state SET phase = 'WORKING', last_transition_time = ?, work_accumulated = 0 WHERE id = 1", (time.time(),))
     conn.commit()

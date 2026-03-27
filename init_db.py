@@ -4,8 +4,7 @@ import os
 import glob
 import time
 
-DB_FILE = "tasks.db"
-CONFIG_DIR = "config"
+from db_config import DB_FILE, CONFIG_DIR
 
 
 def init_db():

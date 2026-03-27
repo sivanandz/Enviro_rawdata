@@ -13,11 +13,11 @@ import re
 import zipfile
 import shutil
 from timer_utils import GlobalTimer
+from db_config import DB_FILE
 
 # ==========================================
 # SETUP
 # ==========================================
-DB_FILE = "tasks.db"
 timer = GlobalTimer(work_duration=4*3600, rest_duration=1*3600)
 
 

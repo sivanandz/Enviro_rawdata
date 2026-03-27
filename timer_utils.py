@@ -3,7 +3,7 @@ import time
 import os
 from datetime import datetime, timedelta
 
-DB_FILE = "tasks.db"
+from db_config import DB_FILE
 
 class GlobalTimer:
     def __init__(self, work_duration=4*3600, rest_duration=1*3600):
