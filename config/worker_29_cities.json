@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Hermosillo",
+        "country": "Mexico",
+        "lat": 29.07,
+        "lon": -110.97
+    },
+    {
+        "city": "Ciudad Ju\u00e1rez",
+        "country": "Mexico",
+        "lat": 31.69,
+        "lon": -106.42
+    },
+    {
+        "city": "Monterrey",
+        "country": "Mexico",
+        "lat": 25.68,
+        "lon": -100.31
+    }
+]

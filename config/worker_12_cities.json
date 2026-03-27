@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Adelaide",
+        "country": "Australia",
+        "lat": -34.92,
+        "lon": 138.6
+    },
+    {
+        "city": "Mount Gambier",
+        "country": "Australia",
+        "lat": -37.82,
+        "lon": 140.78
+    },
+    {
+        "city": "Mackay",
+        "country": "Australia",
+        "lat": -21.14,
+        "lon": 149.18
+    }
+]

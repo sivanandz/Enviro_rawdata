@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Curitiba",
+        "country": "Brazil",
+        "lat": -25.42,
+        "lon": -49.27
+    },
+    {
+        "city": "Belo Horizonte",
+        "country": "Brazil",
+        "lat": -19.91,
+        "lon": -43.93
+    },
+    {
+        "city": "Diamantina",
+        "country": "Brazil",
+        "lat": -18.24,
+        "lon": -43.6
+    }
+]

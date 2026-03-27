@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Sofia",
+        "country": "Bulgaria",
+        "lat": 42.69,
+        "lon": 23.32
+    },
+    {
+        "city": "Biskra",
+        "country": "Algeria",
+        "lat": 34.85,
+        "lon": 5.73
+    }
+]

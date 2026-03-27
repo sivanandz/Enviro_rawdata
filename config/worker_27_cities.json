@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Nice",
+        "country": "France",
+        "lat": 43.71,
+        "lon": 7.26
+    },
+    {
+        "city": "Brian\u00e7on",
+        "country": "France",
+        "lat": 44.89,
+        "lon": 6.64
+    },
+    {
+        "city": "Tignes",
+        "country": "France",
+        "lat": 45.46,
+        "lon": 6.9
+    }
+]

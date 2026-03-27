@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Karachi",
+        "country": "Pakistan",
+        "lat": 24.86,
+        "lon": 67.0
+    },
+    {
+        "city": "Lahore",
+        "country": "Pakistan",
+        "lat": 31.52,
+        "lon": 74.35
+    }
+]

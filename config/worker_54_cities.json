@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Pucallpa",
+        "country": "Peru",
+        "lat": -8.38,
+        "lon": -74.55
+    },
+    {
+        "city": "Lima",
+        "country": "Peru",
+        "lat": -12.04,
+        "lon": -77.04
+    }
+]

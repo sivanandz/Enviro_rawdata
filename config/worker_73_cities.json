@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Taipei",
+        "country": "Taiwan",
+        "lat": 25.03,
+        "lon": 121.56
+    },
+    {
+        "city": "Kaohsiung",
+        "country": "Taiwan",
+        "lat": 22.62,
+        "lon": 120.3
+    }
+]

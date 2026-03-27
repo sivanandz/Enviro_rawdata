@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Antofagasta",
+        "country": "Chile",
+        "lat": -23.65,
+        "lon": -70.39
+    },
+    {
+        "city": "Santiago",
+        "country": "Chile",
+        "lat": -33.44,
+        "lon": -70.66
+    }
+]

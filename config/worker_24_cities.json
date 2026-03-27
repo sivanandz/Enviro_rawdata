@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Bologna",
+        "country": "Italy",
+        "lat": 44.49,
+        "lon": 11.34
+    },
+    {
+        "city": "Lampedusa",
+        "country": "Italy",
+        "lat": 35.51,
+        "lon": 12.58
+    },
+    {
+        "city": "Ishigaki",
+        "country": "Japan",
+        "lat": 24.34,
+        "lon": 124.15
+    }
+]

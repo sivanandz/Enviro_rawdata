@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Nakuru",
+        "country": "Kenya",
+        "lat": -0.3,
+        "lon": 36.06
+    },
+    {
+        "city": "Nairobi",
+        "country": "Kenya",
+        "lat": -1.28,
+        "lon": 36.82
+    }
+]

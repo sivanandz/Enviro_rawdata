@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Astana",
+        "country": "Kazakhstan",
+        "lat": 51.16,
+        "lon": 71.44
+    },
+    {
+        "city": "Villa Tunari",
+        "country": "Bolivia",
+        "lat": -16.97,
+        "lon": -65.42
+    }
+]

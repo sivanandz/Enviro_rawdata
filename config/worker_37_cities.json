@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Medan",
+        "country": "Indonesia",
+        "lat": 3.59,
+        "lon": 98.67
+    },
+    {
+        "city": "Jakarta",
+        "country": "Indonesia",
+        "lat": -6.17,
+        "lon": 106.82
+    },
+    {
+        "city": "Denpasar",
+        "country": "Indonesia",
+        "lat": -8.67,
+        "lon": 115.21
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Chicago",
+        "country": "United_States",
+        "lat": 41.87,
+        "lon": -87.62
+    },
+    {
+        "city": "Minneapolis",
+        "country": "United_States",
+        "lat": 44.97,
+        "lon": -93.26
+    },
+    {
+        "city": "Nome",
+        "country": "United_States",
+        "lat": 64.5,
+        "lon": -165.4
+    }
+]

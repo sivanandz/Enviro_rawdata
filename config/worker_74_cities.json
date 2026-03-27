@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Piraeus",
+        "country": "Greece",
+        "lat": 37.94,
+        "lon": 23.64
+    },
+    {
+        "city": "Thessaloniki",
+        "country": "Greece",
+        "lat": 40.64,
+        "lon": 22.94
+    }
+]

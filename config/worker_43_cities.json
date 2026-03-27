@@ -1,0 +1,20 @@
+[
+    {
+        "city": "C\u00f3rdoba",
+        "country": "Argentina",
+        "lat": -31.41,
+        "lon": -64.18
+    },
+    {
+        "city": "El Aguilar",
+        "country": "Argentina",
+        "lat": -23.22,
+        "lon": -65.69
+    },
+    {
+        "city": "Davao",
+        "country": "Philippines",
+        "lat": 7.19,
+        "lon": 125.45
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Anchorage",
+        "country": "United_States",
+        "lat": 61.21,
+        "lon": -149.9
+    },
+    {
+        "city": "Bodie",
+        "country": "United_States",
+        "lat": 38.21,
+        "lon": -119.01
+    },
+    {
+        "city": "Utqiagvik",
+        "country": "United_States",
+        "lat": 71.29,
+        "lon": -156.78
+    }
+]

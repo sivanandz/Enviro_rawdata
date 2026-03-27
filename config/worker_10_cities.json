@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Innisfail",
+        "country": "Australia",
+        "lat": -17.52,
+        "lon": 146.03
+    },
+    {
+        "city": "Cairns",
+        "country": "Australia",
+        "lat": -16.91,
+        "lon": 145.77
+    },
+    {
+        "city": "Darwin",
+        "country": "Australia",
+        "lat": -12.46,
+        "lon": 130.84
+    }
+]

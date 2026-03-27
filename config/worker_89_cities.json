@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Karaganda",
+        "country": "Kazakhstan",
+        "lat": 49.83,
+        "lon": 73.16
+    },
+    {
+        "city": "Almaty",
+        "country": "Kazakhstan",
+        "lat": 43.22,
+        "lon": 76.85
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Kushiro",
+        "country": "Japan",
+        "lat": 42.98,
+        "lon": 144.38
+    },
+    {
+        "city": "Paris",
+        "country": "France",
+        "lat": 48.85,
+        "lon": 2.35
+    },
+    {
+        "city": "Toulouse",
+        "country": "France",
+        "lat": 43.6,
+        "lon": 1.44
+    }
+]

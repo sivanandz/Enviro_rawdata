@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Viedma",
+        "country": "Argentina",
+        "lat": -40.81,
+        "lon": -62.99
+    },
+    {
+        "city": "Mar del Plata (Border)",
+        "country": "Argentina",
+        "lat": -38.0,
+        "lon": -57.55
+    },
+    {
+        "city": "Bariloche",
+        "country": "Argentina",
+        "lat": -41.13,
+        "lon": -71.3
+    }
+]

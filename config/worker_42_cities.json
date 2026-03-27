@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Buenos Aires",
+        "country": "Argentina",
+        "lat": -34.6,
+        "lon": -58.38
+    },
+    {
+        "city": "Mar del Plata",
+        "country": "Argentina",
+        "lat": -38.0,
+        "lon": -57.55
+    },
+    {
+        "city": "Rio Grande",
+        "country": "Argentina",
+        "lat": -53.78,
+        "lon": -67.7
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Quetta",
+        "country": "Pakistan",
+        "lat": 30.17,
+        "lon": 66.97
+    },
+    {
+        "city": "Islamabad",
+        "country": "Pakistan",
+        "lat": 33.68,
+        "lon": 73.04
+    }
+]

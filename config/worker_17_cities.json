@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Upington",
+        "country": "South_Africa",
+        "lat": -28.45,
+        "lon": 21.24
+    },
+    {
+        "city": "Kimberley",
+        "country": "South_Africa",
+        "lat": -28.72,
+        "lon": 24.74
+    },
+    {
+        "city": "Bloemfontein",
+        "country": "South_Africa",
+        "lat": -29.11,
+        "lon": 26.21
+    }
+]

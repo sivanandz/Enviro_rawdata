@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Sucre",
+        "country": "Bolivia",
+        "lat": -19.03,
+        "lon": -65.26
+    },
+    {
+        "city": "El Alto",
+        "country": "Bolivia",
+        "lat": -16.51,
+        "lon": -68.16
+    }
+]

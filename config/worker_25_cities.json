@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Chichijima",
+        "country": "Japan",
+        "lat": 27.09,
+        "lon": 142.19
+    },
+    {
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.68,
+        "lon": 139.69
+    },
+    {
+        "city": "Sapporo",
+        "country": "Japan",
+        "lat": 43.06,
+        "lon": 141.35
+    }
+]

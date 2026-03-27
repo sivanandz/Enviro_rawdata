@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Da Nang",
+        "country": "Vietnam",
+        "lat": 16.05,
+        "lon": 108.2
+    },
+    {
+        "city": "Ho Chi Minh City",
+        "country": "Vietnam",
+        "lat": 10.82,
+        "lon": 106.63
+    },
+    {
+        "city": "Hanoi",
+        "country": "Vietnam",
+        "lat": 21.02,
+        "lon": 105.83
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Bahir Dar",
+        "country": "Ethiopia",
+        "lat": 11.59,
+        "lon": 37.39
+    },
+    {
+        "city": "Addis Ababa",
+        "country": "Ethiopia",
+        "lat": 9.01,
+        "lon": 38.75
+    }
+]

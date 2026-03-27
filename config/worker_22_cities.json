@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Calgary (Border)",
+        "country": "Canada",
+        "lat": 51.04,
+        "lon": -114.07
+    },
+    {
+        "city": "Iqaluit",
+        "country": "Canada",
+        "lat": 63.74,
+        "lon": -68.51
+    },
+    {
+        "city": "Alert",
+        "country": "Canada",
+        "lat": 82.5,
+        "lon": -62.33
+    }
+]

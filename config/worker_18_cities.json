@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Cape Town",
+        "country": "South_Africa",
+        "lat": -33.92,
+        "lon": 18.42
+    },
+    {
+        "city": "Port Lincoln (Analog)",
+        "country": "South_Africa",
+        "lat": -34.72,
+        "lon": 135.86
+    },
+    {
+        "city": "Durban",
+        "country": "South_Africa",
+        "lat": -29.85,
+        "lon": 31.02
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Cayenne (FR Guiana)",
+        "country": "France",
+        "lat": 4.93,
+        "lon": -52.33
+    },
+    {
+        "city": "Villahermosa",
+        "country": "Mexico",
+        "lat": 17.98,
+        "lon": -92.93
+    },
+    {
+        "city": "Canc\u00fan",
+        "country": "Mexico",
+        "lat": 21.16,
+        "lon": -86.85
+    }
+]

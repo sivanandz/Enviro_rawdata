@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Bangkok",
+        "country": "Thailand",
+        "lat": 13.75,
+        "lon": 100.5
+    },
+    {
+        "city": "Auckland",
+        "country": "New_Zealand",
+        "lat": -36.84,
+        "lon": 174.76
+    }
+]

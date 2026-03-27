@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Pasto",
+        "country": "Colombia",
+        "lat": 1.21,
+        "lon": -77.28
+    },
+    {
+        "city": "Iquitos",
+        "country": "Peru",
+        "lat": -3.74,
+        "lon": -73.25
+    }
+]

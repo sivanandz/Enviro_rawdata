@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Montevideo",
+        "country": "Uruguay",
+        "lat": -34.9,
+        "lon": -56.16
+    },
+    {
+        "city": "Bocas del Toro",
+        "country": "Panama",
+        "lat": 9.34,
+        "lon": -82.24
+    }
+]

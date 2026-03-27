@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Nuremberg",
+        "country": "Germany",
+        "lat": 49.45,
+        "lon": 11.07
+    },
+    {
+        "city": "Guayaquil",
+        "country": "Ecuador",
+        "lat": -2.17,
+        "lon": -79.92
+    }
+]

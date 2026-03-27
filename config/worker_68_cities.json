@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Tel Aviv",
+        "country": "Israel",
+        "lat": 32.08,
+        "lon": 34.78
+    },
+    {
+        "city": "Douala",
+        "country": "Cameroon",
+        "lat": 4.05,
+        "lon": 9.7
+    }
+]

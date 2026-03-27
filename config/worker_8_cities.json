@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Jodhpur",
+        "country": "India",
+        "lat": 26.23,
+        "lon": 73.02
+    },
+    {
+        "city": "Leh",
+        "country": "India",
+        "lat": 34.15,
+        "lon": 77.57
+    },
+    {
+        "city": "Delhi",
+        "country": "India",
+        "lat": 28.61,
+        "lon": 77.23
+    }
+]

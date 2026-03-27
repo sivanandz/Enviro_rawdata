@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Manaus",
+        "country": "Brazil",
+        "lat": -3.11,
+        "lon": -60.02
+    },
+    {
+        "city": "Recife",
+        "country": "Brazil",
+        "lat": -8.05,
+        "lon": -34.88
+    },
+    {
+        "city": "Bras\u00edlia",
+        "country": "Brazil",
+        "lat": -15.79,
+        "lon": -47.88
+    }
+]

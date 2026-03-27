@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Pachuca",
+        "country": "Mexico",
+        "lat": 20.1,
+        "lon": -98.75
+    },
+    {
+        "city": "Cuernavaca",
+        "country": "Mexico",
+        "lat": 18.92,
+        "lon": -99.23
+    },
+    {
+        "city": "Mexico City",
+        "country": "Mexico",
+        "lat": 19.43,
+        "lon": -99.13
+    }
+]

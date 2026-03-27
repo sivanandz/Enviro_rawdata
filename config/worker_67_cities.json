@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Eilat",
+        "country": "Israel",
+        "lat": 29.55,
+        "lon": 34.95
+    },
+    {
+        "city": "Beersheba",
+        "country": "Israel",
+        "lat": 31.25,
+        "lon": 34.79
+    }
+]

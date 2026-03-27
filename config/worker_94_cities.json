@@ -1,0 +1,14 @@
+[
+    {
+        "city": "David",
+        "country": "Panama",
+        "lat": 8.43,
+        "lon": -82.43
+    },
+    {
+        "city": "Warsaw",
+        "country": "Poland",
+        "lat": 52.22,
+        "lon": 21.01
+    }
+]

@@ -31,6 +31,7 @@ def main():
     
     last_rejection_time = 0
     last_scale_up_time = time.time()
+    main.last_check_time = time.time()
     
     print(f"=== Adaptive Manager Started ===")
     print(f"Initial target: {target_workers} workers")
@@ -88,23 +89,36 @@ def main():
             
             # 3. LAUNCH WORKERS (Up to Target)
             active_count = len(processes)
-            if active_count < target_workers and pending_tasks > 0:
-                # If we just had a rejection < 60s ago, maybe wait a bit before even launching 1?
-                # The worker slept 60s inside? No, it exited.
-                # Let's enforce a hard pause if rejection was < 60s ago
-                if time_since_rejection < 60:
-                    pass # Don't launch anything immediately after rejection
-                else:
+            
+            # TIMER CHECK: Only launch or keep running if in WORKING phase
+            state = timer.get_state()
+            is_working = (state["phase"] == "WORKING")
+            
+            if is_working:
+                # Update work accumulated
+                if hasattr(main, 'last_check_time'):
+                    delta = current_time - main.last_check_time
+                    timer.tick(delta)
+                main.last_check_time = current_time
+                
+                if active_count < target_workers and pending_tasks > 0:
+                    # ... (rest of the launch logic remains same)
                     needed = target_workers - active_count
                     for _ in range(needed):
-                        # Generate a simple worker ID (pid serves as unique enough, or random)
                         wid = int(time.time() * 1000) % 10000 
                         cmd = [sys.executable, script_name, "--worker-id", str(wid)]
                         p = subprocess.Popen(cmd)
                         processes[p.pid] = p
                         print(f"Launched Worker {wid} (PID: {p.pid}). Total Active: {len(processes)}")
                         time.sleep(1) # Stagger
-        
+            else:
+                # RESTING phase
+                timer.tick(0) # Just check for rest-over
+                main.last_check_time = current_time
+
+            # 4. STATUS DISPLAY
+            timer_summary = timer.get_summary()
+            print(f"{timer_summary}")
             print(f"Status: {len(processes)}/{target_workers} Workers | Tasks Pending: {pending_tasks}", end="\r")
             time.sleep(2)
             

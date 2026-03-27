@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Porto (Analog)",
+        "country": "Spain",
+        "lat": 41.15,
+        "lon": -8.62
+    },
+    {
+        "city": "Girona",
+        "country": "Spain",
+        "lat": 41.97,
+        "lon": 2.82
+    },
+    {
+        "city": "Bilbao",
+        "country": "Spain",
+        "lat": 43.26,
+        "lon": -2.93
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Alicante",
+        "country": "Spain",
+        "lat": 38.34,
+        "lon": -0.48
+    },
+    {
+        "city": "Madrid",
+        "country": "Spain",
+        "lat": 40.41,
+        "lon": -3.7
+    },
+    {
+        "city": "Seville",
+        "country": "Spain",
+        "lat": 37.38,
+        "lon": -5.98
+    }
+]

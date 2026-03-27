@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Erzurum",
+        "country": "Turkey",
+        "lat": 39.9,
+        "lon": 41.27
+    },
+    {
+        "city": "Port Harcourt",
+        "country": "Nigeria",
+        "lat": 4.81,
+        "lon": 7.04
+    },
+    {
+        "city": "Lagos",
+        "country": "Nigeria",
+        "lat": 6.52,
+        "lon": 3.37
+    }
+]

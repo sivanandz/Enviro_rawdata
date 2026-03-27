@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Vienna",
+        "country": "Austria",
+        "lat": 48.2,
+        "lon": 16.37
+    },
+    {
+        "city": "Salzburg",
+        "country": "Austria",
+        "lat": 47.8,
+        "lon": 13.04
+    }
+]

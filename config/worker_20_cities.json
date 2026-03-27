@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Victoria",
+        "country": "Canada",
+        "lat": 48.42,
+        "lon": -123.36
+    },
+    {
+        "city": "Medicine Hat",
+        "country": "Canada",
+        "lat": 50.03,
+        "lon": -110.67
+    },
+    {
+        "city": "Windsor",
+        "country": "Canada",
+        "lat": 42.31,
+        "lon": -83.03
+    }
+]

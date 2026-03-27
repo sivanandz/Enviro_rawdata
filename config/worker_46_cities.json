@@ -1,0 +1,14 @@
+[
+    {
+        "city": "Mombasa",
+        "country": "Kenya",
+        "lat": -4.03,
+        "lon": 39.66
+    },
+    {
+        "city": "Kisumu",
+        "country": "Kenya",
+        "lat": -0.09,
+        "lon": 34.76
+    }
+]

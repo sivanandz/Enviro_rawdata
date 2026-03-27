@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Fortaleza",
+        "country": "Brazil",
+        "lat": -3.73,
+        "lon": -38.52
+    },
+    {
+        "city": "Petrolina",
+        "country": "Brazil",
+        "lat": -9.38,
+        "lon": -40.5
+    },
+    {
+        "city": "S\u00e3o Paulo",
+        "country": "Brazil",
+        "lat": -23.55,
+        "lon": -46.63
+    }
+]

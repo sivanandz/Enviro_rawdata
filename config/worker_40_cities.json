@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Chilecito",
+        "country": "Argentina",
+        "lat": -29.16,
+        "lon": -67.49
+    },
+    {
+        "city": "Mendoza",
+        "country": "Argentina",
+        "lat": -32.88,
+        "lon": -68.84
+    },
+    {
+        "city": "La Rioja",
+        "country": "Argentina",
+        "lat": -29.41,
+        "lon": -66.85
+    }
+]

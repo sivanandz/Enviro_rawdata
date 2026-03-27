@@ -1,0 +1,20 @@
+[
+    {
+        "city": "McMurdo Station",
+        "country": "United_States",
+        "lat": -77.84,
+        "lon": 166.66
+    },
+    {
+        "city": "Kochi",
+        "country": "India",
+        "lat": 9.93,
+        "lon": 76.26
+    },
+    {
+        "city": "Mumbai",
+        "country": "India",
+        "lat": 19.07,
+        "lon": 72.87
+    }
+]

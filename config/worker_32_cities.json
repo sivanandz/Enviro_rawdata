@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Sivas",
+        "country": "Turkey",
+        "lat": 39.75,
+        "lon": 37.01
+    },
+    {
+        "city": "Istanbul",
+        "country": "Turkey",
+        "lat": 41.0,
+        "lon": 28.97
+    },
+    {
+        "city": "Ankara",
+        "country": "Turkey",
+        "lat": 39.93,
+        "lon": 32.85
+    }
+]

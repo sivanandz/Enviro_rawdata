@@ -1,0 +1,20 @@
+[
+    {
+        "city": "Denver",
+        "country": "United_States",
+        "lat": 39.73,
+        "lon": -104.99
+    },
+    {
+        "city": "Sacramento",
+        "country": "United_States",
+        "lat": 38.58,
+        "lon": -121.49
+    },
+    {
+        "city": "San Francisco",
+        "country": "United_States",
+        "lat": 37.77,
+        "lon": -122.41
+    }
+]
